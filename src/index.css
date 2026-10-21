@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --canvas-bg: #FAF9F6;          /* Warm off-white background */
+  --surface-white: #FFFFFF;      /* Clean card working surfaces */
+  --surface-subtle: #F4F3EE;     /* Subtle secondary panel background */
+  --surface-hover: #ECEAE4;      /* Interactive hover state */
+  --border-subtle: #E6E4DD;      /* Restrained borders */
+  --border-strong: #CDC9BD;      /* Active / focus borders */
+
+  /* Text & Inks */
+  --ink-primary: #19241E;        /* Dark readable text */
+  --ink-secondary: #43544B;      /* Secondary labels */
+  --ink-muted: #73847B;          /* Metadata & helper text */
+  --ink-inverse: #FFFFFF;
+
+  /* Primary Forest Green Palette */
+  --forest-900: #0E241A;
+  --forest-800: #183C2C;        /* Primary button & active indicator */
+  --forest-700: #24523D;        /* Primary hover */
+  --forest-100: #E6EFEA;        /* Light primary tint */
+
+  /* Restrained Accents */
+  --accent-sage-bg: #ECF3EE;
+  --accent-sage-text: #245238;
+  --accent-sage-border: #C8DBD0;
+
+  --accent-peach-bg: #FDF3EC;
+  --accent-peach-text: #964F1A;
+  --accent-peach-border: #F8DCB8;
+
+  --accent-lavender-bg: #F4F1FA;
+  --accent-lavender-text: #594280;
+  --accent-lavender-border: #DCD4ED;
+
+  /* Status Colors */
+  --status-pass-bg: #ECF7F0;
+  --status-pass-text: #1A6338;
+  --status-pass-border: #BCE3CB;
+
+  --status-flag-bg: #FEF6EC;
+  --status-flag-text: #925316;
+  --status-flag-border: #F8D8B6;
+
+  --status-fail-bg: #FDF0F0;
+  --status-fail-text: #A32828;
+  --status-fail-border: #F7BFBF;
+
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--canvas-bg);
+  color: var(--ink-primary);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.veras-global-footer {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

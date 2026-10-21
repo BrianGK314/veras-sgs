@@ -1,0 +1,6 @@
+{
+  "name": "Veras — Operations & Verification Platform",
+  "description": "Enterprise technical review, deterministic validation, and regulatory compliance platform for Testing, Inspection, and Certification (TIC) organizations by New Deployment AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
